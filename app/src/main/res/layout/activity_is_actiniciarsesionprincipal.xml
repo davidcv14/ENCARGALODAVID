@@ -7,8 +7,10 @@
     android:orientation="vertical"
     tools:context=".activity_is_actiniciarsesionprincipal"
     android:layout_margin="@dimen/activity_margin"
-    android:gravity="center_horizontal"
-    >
+    android:gravity="center_horizontal">
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,30 +18,30 @@
         android:orientation="vertical">
 
 
-
-
         <ImageView
-            android:layout_width="155dp"
-            android:layout_height="85dp"
-            android:background="@color/grey_800"
-            android:layout_marginTop="71dp"/>
+            android:layout_width="287dp"
+            android:layout_height="200dp"
+            android:src="@drawable/is_imglogo"
+           />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/is_varstriniciariesionprincipal1"
             android:layout_marginTop="36dp"
-            android:textColor="@color/blackPrimary"/>
+            android:textSize="20dp"
+            android:textColor="@color/blackPrimary"
+            android:gravity="center"/>
 
         <Button
             android:id="@+id/is_ispbtnfacebook"
             android:layout_width="@dimen/btn_type01_width"
             android:layout_height="wrap_content"
             android:text="@string/is_varstriniciariesionprincipal2"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="80dp"
             android:background="@drawable/containedbutton_blue"
             android:textColor="@color/whitePrimary"
-            android:textAllCaps="false"
+            android:textAllCaps="true"
             android:textAlignment="textStart"
             android:drawableLeft="@drawable/is_iconfacebook"
             android:drawablePadding="10dp"/>
@@ -49,14 +51,14 @@
             android:layout_width="@dimen/btn_type01_width"
             android:layout_height="wrap_content"
             android:text="@string/is_varstriniciariesionprincipal3"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/containedbutton_blue"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/containedbutton_green"
             android:textColor="@color/whitePrimary"
-            android:textAllCaps="false"
+            android:textAllCaps="true"
             android:textAlignment="textStart"
             android:drawableLeft="@drawable/is_icongoogle"
             android:drawablePadding="10dp"/>
 
-    </LinearLayout>
 
+    </LinearLayout>
 </ScrollView>

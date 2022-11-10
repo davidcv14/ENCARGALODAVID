@@ -2,104 +2,186 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activity_is_actcrearunacuenta"
     android:layout_margin="@dimen/activity_margin"
-    android:gravity="center_horizontal"
-    android:padding="81dp"
     >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/is_varstrcrearunacuenta1"
+            android:layout_marginTop="40dp"
+            android:textSize="15dp"
+            android:textColor="@color/grey_600"
+            android:layout_marginLeft="33dp"
+            android:autoSizeMaxTextSize="12dp"
+            />
     <EditText
-        android:id="@+id/is_edtnombre"
-        android:layout_width="255dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="16dp"
-        android:text="Juan"
-        android:gravity="center_horizontal"
-        />
-        <!--        android:text="@string/is_varstrcrearunacuenta1"-->
+        android:id="@+id/is_cucedtnombre"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:background="@drawable/containedbutton_grey"
+        android:gravity="center"
+        android:textAllCaps="false"/>
 
-
-        android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/is_varstrcrearunacuenta2"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/grey_600"
+            android:layout_marginLeft="33dp"
+            android:autoSizeMaxTextSize="12dp"
+            />
     <EditText
-        android:id="@+id/is_edtapellido"
-        android:layout_width="255dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="16dp"
-        android:text="Valverde"
-        android:gravity="center_horizontal"
-        />
-<!--        android:text="@string/is_varstrcrearunacuenta2"-->
+        android:id="@+id/is_cucedtapellido"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:background="@drawable/containedbutton_grey"
+        android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/is_varstrcrearunacuenta3"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/grey_600"
+            android:layout_marginLeft="33dp"
+            android:autoSizeMaxTextSize="12dp"
+            />
+
+    <TextView
+        android:id="@+id/is_cucedtcorreo"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:background="@drawable/containedbutton_grey"
+        android:gravity="center"
+        android:textAllCaps="false"/>
 
 
-    <EditText
-        android:id="@+id/is_edtcorreo"
-        android:layout_width="255dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="16dp"
-        android:text="jval@gmail.com"
-        android:gravity="center_horizontal"
-        />
-<!--        android:text="@string/is_varstrcrearunacuenta3"-->
-
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/is_varstrcrearunacuenta4"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/grey_600"
+            android:layout_marginLeft="33dp"
+            android:autoSizeMaxTextSize="12dp"
+            />
     <Spinner
-        android:id="@+id/is_sptipopersona"
-        android:layout_width="180dp"
-        android:layout_height="42dp"
+        android:id="@+id/is_cucspntipopersona"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:gravity="center"
         android:spinnerMode="dropdown"
         android:layout_marginTop="16dp"
-        android:text="@string/is_varstrcrearunacuenta4"
-        android:entries="@array/is_varstrcrearunacuenta8"
-        android:gravity="center_horizontal"
-        />
+        android:entries="@array/is_varstrcrearunacuenta9"
+        android:background="@drawable/outline_spinner" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/is_varstrcrearunacuenta5"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/grey_600"
+            android:layout_marginLeft="33dp"
+            android:autoSizeMaxTextSize="12dp"   />
 
         <EditText
-            android:id="@+id/is_spcodigodelpais"
-            android:layout_width="255dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="16dp"
-            android:text="854256458"
-            android:gravity="center_horizontal"
-            android:textColor="@color/blackPrimary" />
-<!--        android:hint="Número de celular"-->
+            android:id="@+id/is_cucedtdocumentoidentidad"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:background="@drawable/containedbutton_grey"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Celular"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/grey_600"
+            android:layout_marginLeft="33dp"
+            android:autoSizeMaxTextSize="12dp"   />
 
-    <CheckBox
-        android:id="@+id/is_chkbterminosycondiciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/is_varstrcrearunacuenta6"
-        android:layout_marginTop="16dp"
-        />
-
-    <Button
-        android:id="@+id/is_ispbtnRegistrarse"
-        android:layout_width="@dimen/btn_type01_width"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/containedbutton_orange"
-        android:text="@string/is_varstrcrearunacuenta7"
-        android:textAllCaps="false"
-        android:textColor="@color/blackPrimary"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
 
 
-        />
+            <Spinner
+                android:id="@+id/is_cucspncodigodelpais"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:spinnerMode="dropdown"
+                android:entries="@array/is_qpkitemspinnercodpais"
+                android:background="@drawable/outline_spinner"
+                />
+
+            <EditText
+                android:id="@+id/is_cucedtnumtelefono"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:background="@drawable/containedbutton_grey"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/is_cucchkbcheckterminos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="35dp"/>
+
+            <Button
+                android:id="@+id/is_cucbtnterminosycondiciones"
+                android:layout_width="230dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="none"
+                android:text="@string/is_varstrcrearunacuenta7"
+                android:textAllCaps="false"
+                android:textColor="@color/blue_600"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/is_cucbtnRegistrarse"
+            android:layout_width="@dimen/btn_type04_width"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/containedbutton_blue"
+            android:text="@string/is_varstrcrearunacuenta8"
+            android:textAllCaps="true"
+            android:textColor="@color/whitePrimary" />
 
     </LinearLayout>
-
-
-
-
 
 </ScrollView>

@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:background="@drawable/outline_textinputedittext"
             android:padding="6dp">
             <ImageView
                 android:id="@+id/mio_icondetalleproducto"
@@ -26,7 +27,7 @@
                 android:layout_gravity="center"
                 android:paddingLeft="14dp"
                 android:paddingRight="14dp"
-                android:src="@drawable/picture"
+                android:src="@drawable/mio_imgproducto"
                 android:layout_alignParentLeft="true" />
 
             <LinearLayout
@@ -75,13 +76,36 @@
 
 
             <CheckBox
-                android:id="@+id/is_chkbdetalleproducto2"
+                android:id="@+id/mio_dpchkbproducto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
                 android:layout_marginLeft="330dp" />
 
         </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            android:padding="6dp">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mio_varstrdetalleproducto8"
+                android:textStyle="bold"
+                android:textColor="@color/blackPrimary" />
+            <TextView
+                android:id="@+id/mio_dptxtpreciototal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" s/6.00"
+                android:textStyle="bold"
+                android:textColor="@color/blackPrimary" />
+        </LinearLayout>
+
+
 
     </LinearLayout>
 </LinearLayout>

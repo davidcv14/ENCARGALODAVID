@@ -6,13 +6,15 @@ import android.view.View;
 import android.widget.Button;
 
 public class activity_is_actcrearunacuenta extends AppCompatActivity {
-Button btncrearcuenta;
+Button cucbtncrearcuenta, btncerrarterminos;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_is_actcrearunacuenta);
 
-        btncrearcuenta=(Button)findViewById(R.id.is_ispbtnRegistrarse);
-        btncrearcuenta.setOnClickListener(new View.OnClickListener() {
+        cucbtncrearcuenta=(Button)findViewById(R.id.is_cucbtnRegistrarse);
+
+        cucbtncrearcuenta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -20,6 +22,7 @@ Button btncrearcuenta;
                 startActivity(loguearfb);
             }
         });
+
 
         }
 }

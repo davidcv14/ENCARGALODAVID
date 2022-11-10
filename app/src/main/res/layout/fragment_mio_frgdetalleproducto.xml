@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,220 +12,250 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/mio_varstrdetalleproducto1"
-            android:textAllCaps="false"
-            android:textColor="@color/blackPrimary"
-            android:paddingTop="10dp"/>
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/txt_num_pedido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="00000001"
-            android:layout_marginLeft="10dp"
-            android:textColor="@color/blackPrimary"
-            android:paddingTop="10dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-
-        <TextView
-            android:id="@+id/mio_dptxtproductos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/mio_varstrdetalleproducto2"
-
-            android:textColor="@color/blackPrimary" />
-        <TextView
-            android:id="@+id/mio_dptxtcontadorproductos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="(2)"
-
-            android:textColor="@color/blackPrimary" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:animateLayoutChanges="true"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="6dp">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center"
-                android:paddingLeft="14dp"
-                android:paddingRight="14dp"
-                android:src="@drawable/picture" />
-
-            <LinearLayout
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="4dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="2dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:hint="@string/mio_varstrdetalleproducto2"
-                    android:textColor="@color/blackPrimary"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:hint="@string/mio_varstrdetalleproducto3"
-                    android:textColor="@color/blackPrimary"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:hint="@string/mio_varstrdetalleproducto4"
-                    android:textColor="@color/blackPrimary"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <CheckBox
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"/>
+                android:text="@string/mio_varstrdetalleproducto1"
+                android:textAllCaps="false"
+                android:textColor="@color/blackPrimary"
+                android:paddingTop="10dp"/>
 
+            <TextView
+                android:id="@+id/txt_num_pedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="00000001"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/blackPrimary"
+                android:paddingTop="10dp"/>
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:animateLayoutChanges="true"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="6dp">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center"
-                android:paddingLeft="14dp"
-                android:paddingRight="14dp"
-                android:src="@drawable/picture" />
-
-            <LinearLayout
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="4dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="2dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:hint="@string/mio_varstrdetalleproducto8"
-                    android:textColor="@color/blackPrimary"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:hint="@string/mio_varstrdetalleproducto4"
-                    android:textColor="@color/blackPrimary"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:hint="@string/mio_varstrdetalleproducto5"
-                    android:textColor="@color/blackPrimary"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <CheckBox
+            <TextView
+                android:id="@+id/mio_dptxtproductos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"/>
+                android:text="@string/mio_varstrdetalleproducto2"
+                android:textStyle="bold"
+                android:textColor="@color/blackPrimary" />
+            <TextView
+                android:id="@+id/mio_dptxtcontadorproductos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="(2)"
+
+                android:textColor="@color/blackPrimary" />
 
         </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/outline_textinputedittextwhite"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:src="@drawable/mio_imgproducto" />
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:hint="Agua Mineral San Mateo"
+                        android:textColor="@color/blackPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:hint="@string/mio_varstrdetalleproducto4"
+                        android:textColor="@color/blackPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/mio_dpchkbproducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/outline_textinputedittextwhite"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:src="@drawable/mio_imgproducto" />
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:hint="Gaseosa Inka Cola 1000ml"
+                        android:textColor="@color/blackPrimary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:hint="s/4.5 x un"
+                        android:textColor="@color/blackPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:padding="6dp">
+        <TextView
 
-        <Button
-            android:id="@+id/mio_dpbtncancelarorden"
-            android:layout_width="@dimen/btn_type03_width"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/redPrimary"
-            android:text="@string/mio_varstrdetalleproducto6"
-            android:textAllCaps="false"
-            android:radius="10dp"/>
-
-        <Button
-            android:id="@+id/is_dpbtnenviar"
-            android:layout_width="@dimen/btn_type03_width"
+            android:text="@string/mio_varstrdetalleproducto8"
+            android:textStyle="bold"
+            android:textColor="@color/blackPrimary" />
+        <TextView
+            android:id="@+id/mio_dptxtpreciototal"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:background="@color/orangePrimary"
-            android:text="@string/mio_varstrdetalleproducto7"
-            android:radius="10dp"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:hint=" s/6.00"
+            android:textStyle="bold"
+            android:textColor="@color/blackPrimary" />
     </LinearLayout>
 
 
-</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mio_dpbtncancelarorden"
+                android:layout_width="@dimen/btn_type04_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/containedbutton_green"
+                android:text="@string/mio_varstrdetalleproducto6"
+                android:textAllCaps="true"
+                android:radius="10dp"
+                android:textColor="@color/whitePrimary"/>
+
+            <Button
+                android:id="@+id/mio_dpbtnenviarorden"
+                android:layout_width="@dimen/btn_type03_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/containedbutton_blue"
+                android:text="@string/mio_varstrdetalleproducto7"
+                android:radius="10dp"
+                android:textColor="@color/whitePrimary"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
